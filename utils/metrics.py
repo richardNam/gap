@@ -24,7 +24,7 @@ class Score(object):
         self.yhat = np.array(yhat)
 
         if self.y.shape[0] != self.yhat.shape[0]:
-            raise PrecitionNotSameLengthError()
+            raise PredictionsNotSameLengthError()
 
         self.predictions = self.create_predictions(self.y, self.yhat)
         self.counter = self.get_counts()

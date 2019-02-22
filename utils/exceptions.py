@@ -3,7 +3,7 @@ __all__ = [
 ]
 
 
-class PrecitionNotSameLengthError(Exception):
+class PredictionsNotSameLengthError(Exception):
     """ Y list and Y_hat list are not the same length"""
     pass
 

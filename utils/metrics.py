@@ -1,6 +1,6 @@
 import numpy as np
 
-from .exceptions import PrecitionNotSameLengthError
+from .exceptions import PredictionsNotSameLengthError
 from .types import PredictedClass
 
 

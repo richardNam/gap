@@ -77,10 +77,12 @@ class Score(object):
         return counter
 
     def recall_score(self):
-        return counter.get('tp') / (counter.get('tp') + counter.get('fn'))
+        return self.counter.get('tp') / (self.counter.get('tp') + \
+                self.counter.get('fn'))
 
     def precision_score(self):
-        return counter.get('tp') / (counter.get('tp') + counter.get('tn'))
+        return self.counter.get('tp') / (self.counter.get('tp') + \
+                self.counter.get('tn'))
 
     def fbeta_score(self, beta=1): 
         numerator = self.precision_score() * self.recall_score()

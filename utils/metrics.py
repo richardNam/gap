@@ -5,11 +5,8 @@ from .types import PredictedClass
 
 
 __all__ = [
-        'precision_score',
-        'recall_score',
-        'f1_score',
-        'fbeta_score',
-    ]
+    'Score',
+]
 
 class Score(object):
     def __init__(self, y, yhat):

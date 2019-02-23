@@ -1,9 +1,9 @@
 from collections import namedtuple
 
 __all__ = [
-        'Sample',
-        'PredictedClass',
-        ]
+    'Sample',
+    'PredictedClass',
+]
 
 
 class Sample(namedtuple(
@@ -41,7 +41,7 @@ class Sample(namedtuple(
     """
     pass
 
-class PredictedClass(nampedtuple(
+class PredictedClass(namedtuple(
     'PredictedClass',
     [
         'index',

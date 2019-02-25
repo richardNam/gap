@@ -27,7 +27,7 @@ def unpack_spacy_doc(doc):
     
     clusters = {}
     for i, cluster in enumerate(doc._.coref_clusters):
-        clusters[i] = {'main': cluster.main}
+        clusters[i] = {'main': cluster.main.text}
         
         total = []
         for token in cluster.mentions:
